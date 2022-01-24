@@ -5,9 +5,3 @@
     background: rgb(13,34,13);
     background: linear-gradient(90deg, rgba(13,34,13,1) 0%, rgba(8,152,10,1) 100%);
 }
-.fondobanner{
-    background-image: url("img/descarga.jfif");
-    height: 250px;
-    background-attachment: fixed;
-    background-position: top center;
-}
