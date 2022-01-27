@@ -12,7 +12,7 @@
     <header class="animate__animated animate__bounce"> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-success">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Atletico Nacional <i class="fas fa-futbol"></i></i></a>
+              <a class="navbar-brand" href="../index.html">Atletico Nacional <i class="fas fa-futbol"></i></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,12 +30,49 @@
             </div>
           </nav>
     <main>
+      <section>
+        <img src="../img/logo-tienda.png" alt="Nacional" class="img-fluid w-100"> 
+      </section>
         <div class="container mt-5">
             <div class="row row-cols-1 row-cols-md-5 g-3" id="fila">
 
             </div>
         </div>
     </main>
+    <section>
+        <div class="modal fade" id="modalinfo">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-success">
+                <h5 class="modal-title">Tienda de Atletico Nacional </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img src="../img/nacional.png" alt="" class="img-fluid w-100" id="imagenProducto">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h5 id="nombreProducto">nombre de producto</h5>
+                        <h5 id="precioProducto">$precio del producto</h5>
+                        <h6 id="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+                        <div class="mb-3">
+                          <label class="form-label">Cantidad</label>
+                          <input type="number" class="form-control" id="cantidadProducto" value="1" min="0">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary bg-success">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
+          </div>
+    </section>
     <footer>
 
     </footer>
