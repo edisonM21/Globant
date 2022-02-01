@@ -21,11 +21,20 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../views/equipo.html">EQUIPO</a>
+                  </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success bg-white text-dark" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fas fa-cart-arrow-down fa-2x"></i>
+                      <span id="pildora" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
+                        99+
+                      </span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -51,7 +60,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-12 col-md-4">
-                        <img src="../img/atletico.jpg" alt="" class="img-fluid w-100" id="imagenProducto">
+                        <img src="../img/nacional.png" alt="" class="img-fluid w-100" id="imagenProducto">
                     </div>
                     <div class="col-12 col-md-8">
                         <h5 id="nombreProducto">nombre de producto</h5>
@@ -67,7 +76,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary bg-success">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary bg-success" id="añadirAlcarrito">Añadir al carrito</button>
               </div>
             </div>
           </div>

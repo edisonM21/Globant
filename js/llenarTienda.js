@@ -36,7 +36,7 @@ export function llenarTienda(){
         let nombreProducto=document.createElement("h4")
         nombreProducto.textContent=producto.Nombre
 
-        let Precio=document.createElement("h4")
+        let Precio=document.createElement("h5")
         Precio.textContent="$"+producto.Precio
 
         let botonInformacion=document.createElement("button")
@@ -48,15 +48,16 @@ export function llenarTienda(){
         botonInformacion.classList.add("bg-success")
         botonInformacion.textContent="informacion producto"
 
+
         let raya=document.createElement("hr")
         raya.classList.add("w-50")
         raya.classList.add("mx-auto")
         raya.classList.add("d-block")
         raya.classList.add("bg-success")
 
+
         let descripcion=document.createElement("h6")
         descripcion.textContent=producto.descripcion
-
         
         tarjeta.appendChild(imagen)
         tarjeta.appendChild(raya)
