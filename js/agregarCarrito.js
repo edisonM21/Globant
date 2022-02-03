@@ -6,6 +6,7 @@ export function agregarCarrito(carrito){
     let contador=0
     carrito.forEach(function(producto){
         contador=(contador+ Number(producto.cantidad))
+
     });
     console.log(contador)
 
