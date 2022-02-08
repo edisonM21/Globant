@@ -36,9 +36,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="views/tienda.html">TIENDA</a></li>
-                  <li><a class="dropdown-item" href="views/acercaDe.html">ACERCA DE</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">ACERCA DE</a></li>
+                  <li><a class="dropdown-item" href="views/acercaDe.html">ACERCA DE</a></li>               
                 </ul>
               </li>
               <li class="nav-item">
@@ -78,24 +76,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
 
         <section>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                  <h5 class="offcanvas-title text-success" id="offcanvasExampleLabel">REGISTRO</h5>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                  </div>
-                  <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <div class="container">
+
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label text-success">Correo</label>
+                        <input type="email" class="form-control border-success" id="cajaEmail">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label text-success">Password</label>
+                        <input type="password" class="form-control border-success" id="cajaPassword">
+                      </div>
+                      <button type="submit" class="btn btn-success w-100" id="botonRegistro">Registrate</button>
+                    </form>
+                    <img src="img/nacional.png" alt="" class="w-100 img-fluid mt-2">
+
                   </div>
                 </div>
               </div>
@@ -183,5 +184,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <script>
     new WOW().init();
     </script>
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registrarUsuario.js" type="module"></script>
 </body>
 </html>

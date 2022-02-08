@@ -2,7 +2,7 @@ export function verCarrito(carrito){
     let modalVerCarrito = new bootstrap.Modal(document.getElementById('modalVerCarrito'))
 
     let contenedor=document.getElementById("contenedorCarrito")
-    contenedor.innerHTML
+    contenedor.innerHTML=""
     
 
     carrito.forEach(function(producto){
@@ -35,6 +35,7 @@ export function verCarrito(carrito){
         cantidadProducto.classList.add("text-center")
         cantidadProducto.textContent=producto.cantidad + " Und"
 
+
         
         columna1.appendChild(fotoProducto)
         fila.appendChild(columna1)
@@ -54,7 +55,7 @@ export function verCarrito(carrito){
 
     modalVerCarrito.show()
     let botonLimpiarCarrito=document.getElementById("limpiar")
-    botonLimpiarCarrito.addEventListener("click",function(){
+    botonLimpiarCarrito.addEventListener("click",function(){     
         contenedor.innerHTML=""
     })
     
