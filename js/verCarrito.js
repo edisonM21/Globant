@@ -29,12 +29,15 @@ export function verCarrito(carrito){
 
         let precioProducto=document.createElement("h5")
         precioProducto.classList.add("text-center")
-        precioProducto.textContent=producto.precio
+        precioProducto.textContent="Precio: "+producto.precio
 
         let cantidadProducto=document.createElement("h6")
         cantidadProducto.classList.add("text-center")
-        cantidadProducto.textContent=producto.cantidad + " Und"
+        cantidadProducto.textContent="Unidad: "+producto.cantidad
 
+        let subtotal=document.createElement("h5")
+        subtotal.classList.add("text-center")
+        subtotal.textContent="Subtotal: "+producto.cantidad*producto.precio
 
         
         columna1.appendChild(fotoProducto)
@@ -44,6 +47,7 @@ export function verCarrito(carrito){
         columna2.appendChild(nombreProducto)
         columna2.appendChild(precioProducto)
         columna2.appendChild(cantidadProducto)
+        columna2.appendChild(subtotal)
 
 
 
@@ -57,7 +61,8 @@ export function verCarrito(carrito){
     let botonLimpiarCarrito=document.getElementById("limpiar")
     botonLimpiarCarrito.addEventListener("click",function(){     
         contenedor.innerHTML=""
-    })
-    
+        pildora.innerHTML=""
+        carrito.length=0
+    })  
 
 }

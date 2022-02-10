@@ -15,7 +15,7 @@ export function llenarTienda(){
     //rutina para recorrer el arreglo y crear tarjetas
 
     let fila=document.getElementById("fila")
-
+    
     productos.forEach(function(producto){
         let columna=document.createElement("div")
         columna.classList.add("col")
@@ -43,7 +43,7 @@ export function llenarTienda(){
 
         let Precio=document.createElement("h5")
         Precio.classList.add("text-success")
-        Precio.textContent="$"+producto.Precio
+        Precio.textContent=producto.Precio
 
         let botonInformacion=document.createElement("button")
         botonInformacion.setAttribute("type","button")
