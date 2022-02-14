@@ -4,6 +4,7 @@ export function verCarrito(carrito){
     let contenedor=document.getElementById("contenedorCarrito")
     contenedor.innerHTML=""
     
+    let subtotales=[]
 
     carrito.forEach(function(producto){
 
@@ -34,10 +35,12 @@ export function verCarrito(carrito){
         let cantidadProducto=document.createElement("h6")
         cantidadProducto.classList.add("text-center")
         cantidadProducto.textContent="Unidad: "+producto.cantidad
-
+        
         let subtotal=document.createElement("h5")
         subtotal.classList.add("text-center")
         subtotal.textContent="Subtotal: "+producto.cantidad*producto.precio
+
+
 
         
         columna1.appendChild(fotoProducto)
@@ -52,9 +55,19 @@ export function verCarrito(carrito){
 
 
         contenedor.appendChild(fila)
-
+        subtotales.push(producto.cantidad*producto.precio)
 
     })
+
+    
+        let total=0
+        subtotales.forEach(subtotal=>{
+            total=total+subtotal
+        })
+        
+
+
+
 
 
     modalVerCarrito.show()
@@ -63,6 +76,38 @@ export function verCarrito(carrito){
         contenedor.innerHTML=""
         pildora.innerHTML=""
         carrito.length=0
+        valortotal.innerHTML=""
     })  
+
+    let valortotal=document.getElementById("total")
+    valortotal.textContent="Total:"+total
+    console.log(valortotal)
+
+    let convertir=document.getElementById("convertir")
+    convertir.addEventListener("click",function(){
+        total=total*0.00025
+        valortotal.textContent="Total: "+total + " USD"
+        
+    })
+    let mensajecompra = document.getElementById("mensajecompra")
+    let modalcompra=new bootstrap.Modal(document.getElementById('modalcompra'))
+
+    let comprar=document.getElementById("comprar")
+    comprar.addEventListener("click",function(event){
+      event.preventDefault()
+
+  mensajecompra.textContent="Felicidades por tu compra"
+  modalcompra.show()
+  contenedor.innerHTML=""
+  valortotal.innerHTML=""
+  pildora.innerHTML=""
+  carrito.length=0
+  modalVerCarrito.hide()
+  console.log()
+
+    })
+
+
+
 
 }

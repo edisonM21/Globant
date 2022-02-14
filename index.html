@@ -35,8 +35,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   CONOCE MAS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="views/tienda.html">TIENDA</a></li>
-                  <li><a class="dropdown-item" href="views/acercaDe.html">ACERCA DE</a></li>               
+                  <li><a class="dropdown-item" href="views/tienda.html">TIENDA</a></li>             
                 </ul>
               </li>
               <li class="nav-item">
@@ -75,7 +74,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             </div>
         </div>
 
-        <section>
+        <section >
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title text-success" id="offcanvasExampleLabel">REGISTRO</h5>
@@ -93,7 +92,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                         <label class="form-label text-success">Password</label>
                         <input type="password" class="form-control border-success" id="cajaPassword">
                       </div>
-                      <button type="submit" class="btn btn-success w-100" id="botonRegistro">Registrate</button>
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary bg-success" type="button" id="botonRegistro">Registro</button>
+                        <button class="btn btn-primary bg-success" type="button" id="botonInicio">Iniciar</button>
+                      </div>
                     </form>
                     <img src="img/nacional.png" alt="" class="w-100 img-fluid mt-2">
 
@@ -120,16 +122,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   <div class="card h-100">
                     <img src="img/card-4.jpg" class="card-img-top" alt="card-1">
                     <div class="card-body">
-                      <h5 class="card-title text-success">Card title</h5>
-                      <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title text-success">Sede Atletico Nacional</h5>
+                      <p class="card-text ">Los arreglos y las modificaciones llegaron, se mejoraron los parqueaderos, la zona húmeda, la sala de prensa. Se hizo tribuna para 300 personas en la cancha sintética, se adecuó el gimnasio, se creció en parte lúdica</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100">  
                     <div class="card-body">
-                      <h5 class="card-title text-success">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title text-success">Escudo</h5>
+                      <p class="card-text">El emblema de los Verdolagas representa muchas, desde los colores hasta las formas. Por ejemplo, el verde significa esperanza, es el color de la naturaleza. Por otro lado, el blanco es la paz, la claridad, la honestidad y la libertad. Mientras que el castillo que luce hasta arriba el símbolo representan grandeza, tradición, fortaleza y jerarquía</p>
                       </div>
                       
                     <img src="img/card-2.jpg" class="card-img-top" alt="card-2">
@@ -139,8 +141,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   <div class="card h-100">
                     <img src="img/card-3.jpg" class="card-img-top" alt="card-3">
                     <div class="card-body">
-                      <h5 class="card-title text-success">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title text-success">Sede Atletico Nacional</h5>
+                      <p class="card-text">La Sede Deportiva de Guarne de Atlético Nacional es un Predio Campestre construido a partir de 2008 por el elenco Verdolaga que contó con la colaboración de la Organización Ardila Lülle y Postobón para ejecutar un sueño instalado en el corazón nacionalista desde hacía mucho tiempo</p>
                     </div>
                   </div>
                 </div>
@@ -175,29 +177,53 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary bg-success">Save changes</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section>
+          <div class="modal fade " id="modalInicio">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-success">
+                  <h5 class="modal-title text-white" id="exampleModalLabel">Iniciar </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4 id="mensajeInicio"></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     <footer class="bg-white  mt-4 p-3 ">
       <div class="container text-dark">
         <div class="row">
           <div class="col-12 col-md-4">
-            <p>Edison mesa tapias &copy;</p>
-            <p>Equipo profecional </p>
+            <p>Equipo profesional </p>
             <p>Atletico Nacional</p>
-            <p>Eliminado de la liga colombiana de futbol</p>
-            <p>Rey de copas</p>
+            <p>Edison mesa tapias &copy;</p>
           </div>
           <div class="col-12 col-md-4">
+            <p>Equipo profesional </p>
+            <p>Atletico Nacional</p>
             <p>Edison mesa tapias &copy;</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, veritatis mollitia vero tempora debitis magni excepturi explicabo minima, consequuntur sit atque ipsa placeat officia dicta, repellat cupiditate quidem fugit sint!</p>
           </div>
           <div class="col-12 col-md-4">
+            <p>Equipo profesional </p>
+            <p>Atletico Nacional</p>
             <p>Edison mesa tapias &copy;</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eligendi ullam molestiae blanditiis, fugit quae eum exercitationem veniam asperiores architecto corporis voluptate assumenda aut nostrum, rerum velit accusamus tempore nesciunt!</p>
           </div>
         </div>
       </div>

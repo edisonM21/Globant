@@ -1,15 +1,15 @@
 export function llenarTienda(){
     let productos=[
-        {Nombre:"Buso Capucha",Precio:22000,foto:"../img/buso-capucha.jpg",descripcion:"Buso de Atletico Naciional"},
-        {Nombre:"Buso cierre",Precio:200000,foto:"../img/buso-cierre.jpg",descripcion:"Buso con cierre completo"},
-        {Nombre:"Buso cuello",Precio:250000,foto:"../img/buso-cuello.jpg",descripcion:"Buso de cuello de tortuga"},
+        {Nombre:"Buso Capucha",Precio:120000,foto:"../img/buso-capucha.jpg",descripcion:"Buso de Atletico Naciional"},
+        {Nombre:"Buso cierre",Precio:150000,foto:"../img/buso-cierre.jpg",descripcion:"Buso con cierre completo"},
+        {Nombre:"Buso cuello",Precio:125000,foto:"../img/buso-cuello.jpg",descripcion:"Buso de cuello de tortuga"},
         {Nombre:"camiseta blanca",Precio:50000,foto:"../img/camiseta-blanca.jpg",descripcion:"Camiseta fondo blanco"},
         {Nombre:"camiseta dama",Precio:90000,foto:"../img/camiseta-dama.jpg",descripcion:"Camiseta original para mujer"},
-        {Nombre:"camiseta Polo",Precio:75000,foto:"../img/camiseta-polo.jpg",descripcion:"Camiseta con cuello"},
-        {Nombre:"camiseta negra",Precio:180000,foto:"../img/camiseta-negra.jpg",descripcion:"Camiseta negra con estampado"},
-        {Nombre:"camiseta sam",Precio:300000,foto:"../img/camiseta-sam.jpg",descripcion:"Camisete Antigua y la original"},
-        {Nombre:"Gorra",Precio:120000,foto:"../img/gorra.jpg",descripcion:"Gorra con escudo del nacional"},
-        {Nombre:"sudadera entreno",Precio:160000,foto:"../img/sudadera-entreno.jpg",descripcion:"Sudadera de algodon"},
+        {Nombre:"camiseta Polo",Precio:80000,foto:"../img/camiseta-polo.jpg",descripcion:"Camiseta con cuello"},
+        {Nombre:"camiseta negra",Precio:55000,foto:"../img/camiseta-negra.jpg",descripcion:"Camiseta negra con estampado"},
+        {Nombre:"camiseta sam",Precio:180000,foto:"../img/camiseta-sam.jpg",descripcion:"Camisete Antigua y la original"},
+        {Nombre:"Gorra",Precio:70000,foto:"../img/gorra.jpg",descripcion:"Gorra con escudo del nacional"},
+        {Nombre:"sudadera entreno",Precio:95000,foto:"../img/sudadera-entreno.jpg",descripcion:"Sudadera de algodon"},
 
     ]
     //rutina para recorrer el arreglo y crear tarjetas
